@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'event-form': '#01386A',
+        'main-color': '#01386A',
       },
     },
   },

@@ -1,12 +1,3 @@
 <template>
-  <div :class="[width, height]">
-    <img class="v-full h-full" src="/img/coruja-logo.png" alt="Logo Coruja">
-  </div>
+  <img class="w-full h-full" src="/img/coruja-logo.png" alt="Logo Coruja">
 </template>
-
-<script>
-export default {
-  props: ["width", "height"],
-}
-</script>
-

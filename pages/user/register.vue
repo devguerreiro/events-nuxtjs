@@ -1,18 +1,14 @@
 <template>
-  <div class="w-full h-full bg-blue-400 flex items-center">
-    <div class="w-full flex items-center">
-      <div class="flex-1 flex justify-center mx-24">
-        <EventLogo
-        width="w-80"
-        height="h-72"
-        />
-      </div>
-      <div class="flex-1 mx-24">
-        <EventForm
-        :form_data="form_data"
-        label_button="Concluir cadastro"
-        />
-      </div>
+  <div class="h-full bg-blue-400 grid grid-cols-1 grid-rows-6 xl:grid-cols-2 xl:grid-rows-1 xl:items-center">
+    <div class="md:row-span-2 xl:h-2/5">
+      <EventLogo class="object-contain"/>
+    </div>
+    <div class="row-span-5 mx-4 mb-8 xl:w-3/5 xl:mx-auto">
+      <EventForm
+      class="max-h-full overflow-scroll overscroll-contain md:overflow-hidden md:overscroll-none text-sm md:text-xl lg:text-2xl xl:text-base"
+      :form_data="form_data"
+      label_button="Concluir cadastro"
+      />
     </div>
   </div>
 </template>
