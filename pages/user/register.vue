@@ -1,7 +1,7 @@
 <template>
-  <div class="h-full bg-blue-400 grid grid-cols-1 grid-rows-6 xl:grid-cols-2 xl:grid-rows-1 xl:items-center">
+  <main class="h-full bg-blue-400 grid grid-cols-1 grid-rows-6 xl:grid-cols-2 xl:grid-rows-1 xl:items-center">
     <div class="md:row-span-2 xl:h-2/5">
-      <EventLogo class="object-contain"/>
+      <EventLogo />
     </div>
     <div class="row-span-5 mx-4 mb-8 xl:w-3/5 xl:mx-auto">
       <EventForm
@@ -10,7 +10,7 @@
       label_button="Concluir cadastro"
       />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

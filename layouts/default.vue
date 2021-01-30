@@ -1,5 +1,6 @@
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full flex flex-col">
+    <EventNavBar />
     <Nuxt />
   </div>
 </template>

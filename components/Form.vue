@@ -18,6 +18,7 @@
       :invalid="input.invalid"
       />
       <EventButton
+      class="mt-4 mb-2"
       type="submit"
       :label="label_button"
       :disabled="hasError"
