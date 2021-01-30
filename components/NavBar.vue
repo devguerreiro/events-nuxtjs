@@ -23,8 +23,8 @@
         </ul>
       </div>
       <div class="h-full flex-1 flex justify-end items-center">
-        <a class="mx-4" href="">Sign-in</a>
-        <a class="mx-4" href="">Sign-up</a>
+        <nuxt-link class="mx-4" to="">Sign-in</nuxt-link>
+        <nuxt-link class="mx-4" to="">Sign-up</nuxt-link>
       </div>
     </div>
   </nav>
