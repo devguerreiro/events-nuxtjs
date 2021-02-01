@@ -14,10 +14,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    // './node_modules/element-ui/packages/theme-chalk/lib/button.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/element-ui.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
@@ -39,6 +41,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -49,6 +52,31 @@ export default {
     manifest: {
       lang: 'en',
     },
+  },
+
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        file: 'en-US.js',
+      },
+      {
+        code: 'es',
+        file: 'es-ES.js',
+      },
+      {
+        code: 'fr',
+        file: 'fr-FR.js',
+      },
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'en',
+  },
+
+  elementUI: {
+    components: ['Button', 'DatePicker'],
+    locale: 'en',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
