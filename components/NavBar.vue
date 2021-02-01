@@ -7,14 +7,16 @@
     </div>
     <div class="h-full hidden md:flex items-center text-white md:text-lg lg:text-2xl xl:text-base">
       <div class="h-full w-36 mx-4">
-        <EventLogo />
+        <nuxt-link :to="{'name': 'index'}">
+          <EventLogo />
+        </nuxt-link>
       </div>
       <div class="flex-1">
         <ul class="flex justify-end items-center">
           <li
           v-for="(link, index) in links"
           :key="index"
-          class="mx-8"
+          class="mx-8 py-4 px-2"
           >
             <nuxt-link :to="link.url">
               {{link.label}}
@@ -22,9 +24,9 @@
           </li>
         </ul>
       </div>
-      <div class="h-full flex-1 flex justify-end items-center">
-        <nuxt-link class="mx-4" to="">Sign-in</nuxt-link>
-        <nuxt-link class="mx-4" to="">Sign-up</nuxt-link>
+      <div class="h-full flex flex-1 justify-end items-center">
+        <nuxt-link class="mr-8" to="">Sign-in</nuxt-link>
+        <nuxt-link class="mr-8" :to="{'name': 'user-register'}">Sign-up</nuxt-link>
       </div>
     </div>
   </nav>
@@ -35,7 +37,7 @@ export default {
     links: [
       {
       "label": "Home",
-      "url": ""
+      "url": {'name': 'index'}
     },
     {
       "label": "About",
