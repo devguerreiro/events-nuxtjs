@@ -15,7 +15,10 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    // './node_modules/element-ui/packages/theme-chalk/lib/button.css'
+    './node_modules/element-ui/packages/theme-chalk/lib/icon.css',
+    './node_modules/element-ui/packages/theme-chalk/lib/dropdown.css',
+    './node_modules/element-ui/packages/theme-chalk/lib/dropdown-menu.css',
+    './node_modules/element-ui/packages/theme-chalk/lib/dropdown-item.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

@@ -1,32 +1,78 @@
 <template>
   <nav class="h-12 bg-main-color">
-    <div class="md:hidden text-white h-full flex justify-end">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-full">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+    <!-- mobile menu -->
+    <div class="md:hidden text-white h-full flex justify-end items-center">
+      <el-dropdown trigger="click">
+        <i class="el-icon-menu mr-4 text-3xl text-blue-400 "/>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item
+          v-for="link in middleLinks"
+          :icon="link.icon"
+          :key="link.label"
+          >
+            <div class="inline-block text-center">
+              <nuxt-link
+              :to="localePath(link.url)"
+              >
+                {{ $t(link.label) }}
+              </nuxt-link>
+            </div>
+          </el-dropdown-item>
+          <el-dropdown-item divided/>
+          <el-dropdown-item
+          v-for="link in rightLinks"
+          :icon="link.icon"
+          :key="link.label"
+          >
+            <div class="inline-block text-center">
+              <nuxt-link
+              :to="localePath(link.url)"
+              >
+                {{ $t(link.label) }}
+              </nuxt-link>
+            </div>
+          </el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
     </div>
-    <div class="h-full hidden md:flex items-center text-white md:text-lg lg:text-2xl xl:text-base">
-      <div class="h-full w-36 mx-4">
-        <nuxt-link :to="{'name': 'index'}">
+    <!-- not mobile menu -->
+    <div
+    class="h-full hidden md:flex text-white md:text-lg lg:text-2xl xl:text-base"
+    nav-items
+    >
+      <div
+      class="h-full w-36 mx-4"
+      logo-left
+      >
+        <nuxt-link :to="localePath('index')">
           <EventLogo />
         </nuxt-link>
       </div>
-      <div class="flex-1">
-        <ul class="flex justify-end items-center">
-          <li
-          class="mx-8 py-4 px-2"
-          v-for="(link, index) in links"
-          :key="index"
-          >
-            <nuxt-link :to="link.url">
-              {{link.label}}
-            </nuxt-link>
-          </li>
-        </ul>
+      <div
+      class="h-full flex flex-1"
+      items-middle
+      >
+        <nuxt-link
+        v-for="link in middleLinks"
+        class="flex items-center mx-6 px-2"
+        :key="link.label"
+        :to="localePath(link.url)"
+        >
+          {{ $t(link.label) }}
+        </nuxt-link>
       </div>
-      <div class="h-full flex flex-1 justify-end items-center">
-        <nuxt-link class="mr-8" to="">Sign-in</nuxt-link>
-        <nuxt-link class="mr-8" :to="{'name': 'user-register'}">Sign-up</nuxt-link>
+      <div
+      class="h-full flex"
+      items-right
+      >
+        <nuxt-link
+        v-for="link in rightLinks"
+        class="flex items-center mx-4 px-2"
+        :key="link.label"
+        :to="localePath(link.url)"
+        >
+          {{ $t(link.label) }}
+        </nuxt-link>
       </div>
     </div>
   </nav>
@@ -34,20 +80,50 @@
 <script>
 export default {
   data: () => ({
-    links: [
-      {
-      "label": "Home",
-      "url": {'name': 'index'}
+    middleLinks: [
+    {
+      "label": "home", // word of language file to translate
+      "url": "index", // route name
+      "icon": "el-icon-s-home"
     },
     {
-      "label": "About",
-      "url": ""
+      "label": "about",
+      "url": "about",
+      "icon": "el-icon-info"
     },
     {
-      "label": "Contact",
-      "url": ""
+      "label": "contact",
+      "url": "contact",
+      "icon": "el-icon-phone"
+    },
+    ],
+    rightLinks: [
+    {
+      "label": "signIn",
+      "url": "user-login",
+      "icon": "el-icon-user-solid"
+    },
+    {
+      "label": "signUp",
+      "url": "user-register",
+      "icon": "el-icon-s-custom"
     },
     ]
   })
 }
 </script>
+
+<style>
+.nuxt-link-exact-active {
+  border-bottom: 4px solid #60A5FA;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .nuxt-link-exact-active {
+    border-bottom: 2px solid #60A5FA;
+    border-radius: 5px;
+    padding-bottom: 2px;
+  }
+}
+</style>
