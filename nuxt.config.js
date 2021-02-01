@@ -68,8 +68,8 @@ export default {
         file: 'es-ES.js',
       },
       {
-        code: 'fr',
-        file: 'fr-FR.js',
+        code: 'pt-br',
+        file: 'pt-BR.js',
       },
     ],
     lazy: true,
