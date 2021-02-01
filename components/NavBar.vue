@@ -14,9 +14,9 @@
       <div class="flex-1">
         <ul class="flex justify-end items-center">
           <li
+          class="mx-8 py-4 px-2"
           v-for="(link, index) in links"
           :key="index"
-          class="mx-8 py-4 px-2"
           >
             <nuxt-link :to="link.url">
               {{link.label}}

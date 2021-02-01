@@ -1,8 +1,8 @@
 <template>
   <form
+    class="flex flex-col items-center w-full p-8 bg-main-color text-white ring-4 ring-black ring-opacity-10 rounded-2xl shadow-2xl"
     action=""
     method="post"
-    class="flex flex-col items-center w-full p-8 bg-main-color text-white ring-4 ring-black ring-opacity-10 rounded-2xl shadow-2xl"
     @submit.prevent
     >
       <span class="text-2xl md:text-4xl lg:text-5xl xl:text-4xl">Cadastre-se</span>
@@ -15,7 +15,7 @@
       :name="input.name"
       :type="input.type"
       :required="input.required"
-      :invalid="input.invalid"
+      :invalid="hasError"
       />
       <EventButton
       class="mt-4 mb-2"
