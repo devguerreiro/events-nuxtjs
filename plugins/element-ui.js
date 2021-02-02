@@ -10,4 +10,5 @@ export default () => {
   Vue.component('ElDropdown', () => import('element-ui/lib/dropdown'))
   Vue.component('ElDropdownMenu', () => import('element-ui/lib/dropdown-menu'))
   Vue.component('ElDropdownItem', () => import('element-ui/lib/dropdown-item'))
+  Vue.component("ElTooltip", () => import("element-ui/lib/tooltip"))
 }

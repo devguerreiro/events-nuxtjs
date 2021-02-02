@@ -19,6 +19,7 @@ export default {
     './node_modules/element-ui/packages/theme-chalk/lib/dropdown.css',
     './node_modules/element-ui/packages/theme-chalk/lib/dropdown-menu.css',
     './node_modules/element-ui/packages/theme-chalk/lib/dropdown-item.css',
+    './node_modules/element-ui/packages/theme-chalk/lib/tooltip.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -75,11 +76,6 @@ export default {
     lazy: true,
     langDir: 'lang/',
     defaultLocale: 'en',
-  },
-
-  elementUI: {
-    components: ['Button', 'DatePicker'],
-    locale: 'en',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

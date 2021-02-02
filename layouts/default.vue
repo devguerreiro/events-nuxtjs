@@ -2,6 +2,7 @@
   <div class="w-full h-full flex flex-col">
     <EventNavBar />
     <Nuxt />
+    <EventFooter/>
   </div>
 </template>
 
