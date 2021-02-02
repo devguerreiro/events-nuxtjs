@@ -10,13 +10,11 @@
           :icon="link.icon"
           :key="link.label"
           >
-            <div class="inline-block text-center">
-              <nuxt-link
-              :to="localePath(link.url)"
-              >
-                {{ $t(link.label) }}
-              </nuxt-link>
-            </div>
+            <nuxt-link
+            :to="localePath(link.url)"
+            >
+              {{ $t(link.label) }}
+            </nuxt-link>
           </el-dropdown-item>
           <el-dropdown-item divided/>
           <el-dropdown-item
@@ -24,13 +22,11 @@
           :icon="link.icon"
           :key="link.label"
           >
-            <div class="inline-block text-center">
-              <nuxt-link
-              :to="localePath(link.url)"
-              >
-                {{ $t(link.label) }}
-              </nuxt-link>
-            </div>
+            <nuxt-link
+            :to="localePath(link.url)"
+            >
+              {{ $t(link.label) }}
+            </nuxt-link>
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
@@ -113,7 +109,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .nuxt-link-exact-active {
   border-bottom: 4px solid #60A5FA;
   border-radius: 12px;
