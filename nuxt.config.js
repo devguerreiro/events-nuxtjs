@@ -76,6 +76,9 @@ export default {
     lazy: true,
     langDir: 'lang/',
     defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

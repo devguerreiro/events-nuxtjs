@@ -1,14 +1,23 @@
 <template>
   <footer class="h-24 w-full flex items-center fixed bottom-0 bg-main-color">
     <div class="fixed bottom-28 right-6 z-10" languages>
-      <el-dropdown trigger="click" size="medium" placement="top">
+      <el-dropdown
+        class="h-12 w-12"
+        trigger="click"
+        size="medium"
+        placement="top"
+      >
         <el-tooltip
           class="item el-dropdown-link"
           effect="light"
           content="Choose a language"
           placement="left"
         >
-          <i class="el-icon-plus text-4xl text-white cursor-pointer" />
+          <img
+            class="object contain"
+            :src="require(`~/assets/icons/${currentLocale}.svg`)"
+            alt="Current Language"
+          />
         </el-tooltip>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item
@@ -18,7 +27,7 @@
             <nuxt-link :to="switchLocalePath(language.locale)">
               <img
                 class="h-8 w-8 my-2"
-                :src="require(`~/assets/icons/${language.src}`)"
+                :src="require(`~/assets/icons/${language.locale}.svg`)"
                 :alt="language.alt"
               />
             </nuxt-link>
@@ -41,22 +50,22 @@ export default {
       {
         locale: 'pt-br',
         alt: 'Portuguese - Brazil',
-        src: 'brazil.svg',
       },
       {
         locale: 'en',
         alt: 'English',
-        src: 'united-states.svg',
       },
       {
         locale: 'es',
         alt: 'Espanish',
-        src: 'spain.svg',
       },
     ],
   }),
   computed: {
     dateNow: () => new Date().getFullYear(),
+    currentLocale: function () {
+      return this.$i18n.locale
+    },
   },
 }
 </script>
