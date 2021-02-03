@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full flex flex-col items-end fixed bottom-0 bg-main-color">
+  <footer class="w-full flex flex-col items-end relative top-0 bg-main-color">
     <div class="h-0 relative bottom-16 right-6 z-10" languages>
       <el-dropdown
         class="h-12 w-12"
@@ -26,7 +26,6 @@
           >
             <nuxt-link :to="switchLocalePath(language.locale)">
               <img
-                class="h-8 w-8 my-2"
                 :src="require(`~/assets/icons/${language.locale}.svg`)"
                 :alt="language.alt"
               />
@@ -35,8 +34,8 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
-    <div class="w-full py-2 flex justify-center" copyright>
-      <h1 class="text-white">
+    <div class="w-full py-2 flex justify-center text-white" copyright>
+      <h1 class="text-sm md:text-lg lg:text-3xl xl:text-base">
         &copy; Copyright {{ dateNow }}, DevGuerreiro &#x1F4BB; &#x2764;
         &#x1F989;
       </h1>
