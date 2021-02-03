@@ -15,5 +15,6 @@ export default {
   typeYourPassword: "Ingrese una contraseña segura",
   typeYourPasswordAgain: "Reescribe tu contraseña",
   register: "Registrarse",
-  confirm: "Confirmar"
+  confirm: "Confirmar",
+  chooseLanguage: "Elige un idioma",
 }

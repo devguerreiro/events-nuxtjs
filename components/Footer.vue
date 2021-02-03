@@ -10,7 +10,7 @@
         <el-tooltip
           class="item el-dropdown-link"
           effect="light"
-          content="Choose a language"
+          :content="$t('chooseLanguage')"
           placement="left"
         >
           <img
@@ -26,6 +26,7 @@
           >
             <nuxt-link :to="switchLocalePath(language.locale)">
               <img
+                class="h-8 w-8 my-2"
                 :src="require(`~/assets/icons/${language.locale}.svg`)"
                 :alt="language.alt"
               />

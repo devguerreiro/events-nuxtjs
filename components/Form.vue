@@ -1,9 +1,10 @@
 <template>
   <form
-    class="flex flex-col items-center w-full p-8 bg-main-color text-white ring-4 ring-black ring-opacity-10 rounded-2xl shadow-2xl"
+    class="flex flex-1 flex-col items-center p-8 bg-main-color text-white ring-4 ring-black ring-opacity-10 rounded-2xl shadow-2xl"
     action=""
     method="post"
     @submit.prevent
+    novalidate
   >
     <span class="text-2xl md:text-4xl lg:text-5xl xl:text-4xl">{{
       $t('register')
@@ -21,7 +22,6 @@
     />
     <EventButton
       class="mt-4 mb-2"
-      type="submit"
       :label="label_button"
       :disabled="hasError"
     />

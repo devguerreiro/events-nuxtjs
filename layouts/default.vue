@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex flex-col">
+  <div class="h-full w-full flex flex-col">
     <EventNavBar />
     <Nuxt />
     <EventFooter/>

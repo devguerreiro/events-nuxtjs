@@ -58,7 +58,7 @@
         >
           <nuxt-link
           v-for="link in middleLinks"
-          class="mx-6"
+          class="mx-6 px-2"
           :key="link.label"
           :to="localePath(link.url)"
           >
