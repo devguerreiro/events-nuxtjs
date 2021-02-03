@@ -1,6 +1,6 @@
 <template>
-  <footer class="h-24 w-full flex items-center fixed bottom-0 bg-main-color">
-    <div class="fixed bottom-28 right-6 z-10" languages>
+  <footer class="w-full flex flex-col items-end fixed bottom-0 bg-main-color">
+    <div class="h-0 relative bottom-16 right-6 z-10" languages>
       <el-dropdown
         class="h-12 w-12"
         trigger="click"
@@ -14,7 +14,7 @@
           placement="left"
         >
           <img
-            class="object contain"
+            class="object contain cursor-pointer"
             :src="require(`~/assets/icons/${currentLocale}.svg`)"
             alt="Current Language"
           />
@@ -35,7 +35,7 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
-    <div class="flex flex-1 justify-center" copyright>
+    <div class="w-full py-2 flex justify-center" copyright>
       <h1 class="text-white">
         &copy; Copyright {{ dateNow }}, DevGuerreiro &#x1F4BB; &#x2764;
         &#x1F989;
