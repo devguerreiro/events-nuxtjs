@@ -7,18 +7,20 @@
       mobile
       >
         <el-dropdown trigger="click">
-          <i class="el-icon-menu mr-4 text-3xl text-blue-400 "/>
+          <i class="el-icon-menu mr-4 text-3xl text-blue-400"/>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item
             v-for="link in middleLinks"
             :icon="link.icon"
             :key="link.label"
             >
-              <nuxt-link
-              :to="localePath(link.url)"
-              >
-                {{ $t(link.label) }}
-              </nuxt-link>
+              <div class="inline-block text-center">
+                <nuxt-link
+                :to="localePath(link.url)"
+                >
+                  {{ $t(link.label) }}
+                </nuxt-link>
+              </div>
             </el-dropdown-item>
             <el-dropdown-item divided/>
             <el-dropdown-item
@@ -26,11 +28,13 @@
             :icon="link.icon"
             :key="link.label"
             >
-              <nuxt-link
-              :to="localePath(link.url)"
-              >
-                {{ $t(link.label) }}
-              </nuxt-link>
+              <div class="inline-block text-center">
+                <nuxt-link
+                :to="localePath(link.url)"
+                >
+                  {{ $t(link.label) }}
+                </nuxt-link>
+              </div>
             </el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
@@ -49,12 +53,12 @@
           </nuxt-link>
         </div>
         <div
-        class="h-full flex flex-1"
+        class="h-full flex flex-1 items-center md:ml-0 lg:ml-32"
         items-middle
         >
           <nuxt-link
           v-for="link in middleLinks"
-          class="flex items-center mx-6 px-2"
+          class="mx-6"
           :key="link.label"
           :to="localePath(link.url)"
           >
@@ -62,12 +66,12 @@
           </nuxt-link>
         </div>
         <div
-        class="h-full flex"
+        class="h-full w-48 flex justify-around items-center mr-8"
         items-right
         >
           <nuxt-link
           v-for="link in rightLinks"
-          class="flex items-center mx-4 px-2"
+          class="px-2"
           :key="link.label"
           :to="localePath(link.url)"
           >
