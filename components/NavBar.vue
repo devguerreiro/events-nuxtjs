@@ -32,10 +32,10 @@
           <EventLogo />
         </nuxt-link>
       </div>
-      <div class="h-full w-56 flex justify-around items-center" items-right>
+      <div class="h-full flex justify-around items-center" items-right>
         <nuxt-link
           v-for="link in rightLinks"
-          class="px-2"
+          class="mx-4 px-2"
           :key="link.label"
           :to="localePath(link.url)"
         >
