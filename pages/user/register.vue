@@ -1,11 +1,11 @@
 <template>
   <main
-    class="pb-4 bg-blue-400 flex flex-1 flex-col items-center xl:flex-row xl:justify-evenly"
+    class="py-8 bg-blue-400 flex flex-col items-center xl:flex-row xl:justify-around"
   >
     <div class="h-24 w-24 md:w-2/5 md:h-1/5 xl:h-1/3">
       <EventLogo />
     </div>
-    <div class="md:w-4/5 lg:w-11/12 xl:w-1/3">
+    <div class="w-full px-4 md:w-4/5 lg:w-11/12 xl:w-1/3">
       <EventForm
         class="text-sm md:text-xl lg:text-2xl xl:text-base"
         :form_data="form_data"

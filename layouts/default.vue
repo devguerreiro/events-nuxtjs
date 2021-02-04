@@ -1,7 +1,9 @@
 <template>
   <div class="h-full w-full flex flex-col">
-    <EventNavBar />
-    <Nuxt />
+    <header>
+      <EventNavBar />
+    </header>
+    <Nuxt class="flex-1"/>
     <EventFooter/>
   </div>
 </template>
