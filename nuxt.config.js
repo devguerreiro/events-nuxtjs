@@ -4,11 +4,16 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'events',
+    title: 'Events Social Network | Nuxtjs',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { name: 'author', content: 'DevGuerreiro' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'This is a personal project to study Nuxtjs as portfolio',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
