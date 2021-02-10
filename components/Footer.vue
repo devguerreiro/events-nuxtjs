@@ -1,6 +1,10 @@
 <template>
   <footer class="w-full flex flex-col items-end relative top-0 bg-main-color">
-    <div class="h-0 relative bottom-16 right-6 z-10" languages>
+    <div
+      class="h-0 relative bottom-16 right-6 z-10"
+      languages
+      :title="$t('chooseLanguage')"
+    >
       <el-dropdown
         class="h-12 w-12"
         trigger="click"
@@ -10,25 +14,27 @@
         <el-tooltip
           class="item el-dropdown-link"
           effect="light"
-          :content="$t('chooseLanguage')"
           placement="left"
+          :content="$t('chooseLanguage')"
         >
           <img
             class="object contain cursor-pointer"
-            :src="require(`~/assets/icons/${currentLocale}.svg`)"
             alt="Current Language"
+            :src="require(`~/assets/icons/${currentLocale}.svg`)"
           />
         </el-tooltip>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item
+            language
             v-for="language in languages"
             :key="language.locale"
           >
             <nuxt-link :to="switchLocalePath(language.locale)">
               <img
                 class="h-8 w-8 my-2"
+                :title="$t(language.locale)"
                 :src="require(`~/assets/icons/${language.locale}.svg`)"
-                :alt="language.alt"
+                :alt="$t(language.locale)"
               />
             </nuxt-link>
           </el-dropdown-item>
@@ -36,7 +42,7 @@
       </el-dropdown>
     </div>
     <div class="w-full py-2 flex justify-center text-white" copyright>
-      <h1 class="text-sm md:text-lg lg:text-3xl xl:text-base">
+      <h1 title="Copyright" class="text-sm md:text-lg lg:text-3xl xl:text-base">
         &copy; Copyright {{ dateNow }}, DevGuerreiro &#x1F4BB; &#x2764;
         &#x1F989;
       </h1>
@@ -49,15 +55,12 @@ export default {
     languages: [
       {
         locale: 'pt-br',
-        alt: 'Portuguese - Brazil',
       },
       {
         locale: 'en',
-        alt: 'English',
       },
       {
         locale: 'es',
-        alt: 'Espanish',
       },
     ],
   }),

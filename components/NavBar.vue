@@ -1,12 +1,11 @@
 <template>
   <nav class="h-12 bg-main-color">
-    <!-- mobile menu -->
     <div
       class="md:hidden text-white h-full flex justify-end items-center"
       mobile
     >
       <el-dropdown trigger="click">
-        <i class="el-icon-menu mr-4 text-3xl text-blue-400" />
+        <span title="Menu" class="el-icon-menu mr-4 text-3xl text-blue-400" />
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item
             v-for="link in rightLinks"
@@ -22,10 +21,9 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
-    <!-- not mobile menu -->
     <div
       class="h-full hidden text-white container mx-auto md:flex md:justify-between md:text-lg lg:text-2xl xl:text-base"
-      nav-items
+      desktop
     >
       <div class="h-full w-36" logo-left>
         <nuxt-link :to="localePath('index')">
