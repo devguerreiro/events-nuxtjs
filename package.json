@@ -15,7 +15,8 @@
     "core-js": "^3.8.3",
     "element-ui": "^2.15.0",
     "nuxt": "^2.14.12",
-    "nuxt-i18n": "^6.19.0"
+    "nuxt-i18n": "^6.19.0",
+    "vee-validate": "^3.4.5"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",
