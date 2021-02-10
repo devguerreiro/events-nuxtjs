@@ -16,8 +16,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      borderWidth: ['active'],
-      borderColor: ['active'],
+      scale: ['active'],
     },
   },
   plugins: [],

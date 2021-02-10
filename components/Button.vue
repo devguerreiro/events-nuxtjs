@@ -1,7 +1,12 @@
 <template>
   <button
-    class="text-center px-4 py-2 bg-transparent rounded-full ring-2 ring-blue-200 ring-opacity-80 text-white font-bold
-    focus:outline-none active:border-b-2 active:border-r-2 active:border-blue-200"
+    class="px-4 py-2 bg-transparent rounded-full ring-2 ring-blue-200 ring-opacity-80 text-white font-bold focus:outline-none"
+    :title="label"
+    :class="
+      disabled
+        ? 'cursor-not-allowed'
+        : 'transform active:scale-100 hover:scale-110 hover:bg-blue-400'
+    "
     :type="type"
     :disabled="disabled"
   >

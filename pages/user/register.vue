@@ -9,7 +9,7 @@
       <EventForm
         class="text-sm md:text-xl lg:text-2xl xl:text-base"
         :form_data="form_data"
-        :label_button="$t('confirm')"
+        :label_button="$t('send')"
       />
     </div>
   </main>
@@ -20,49 +20,59 @@ export default {
   data: () => ({
     form_data: [
       {
-        label: 'firstName',
-        placeholder: 'typeYourFirstName',
-        name: 'first_name',
-        type: 'text',
-        required: true,
-        value: '',
-        invalid: false,
-      },
-      {
-        label: 'lastName',
-        placeholder: 'typeYourLastName',
-        name: 'last_name',
-        type: 'text',
-        required: true,
-        value: '',
-        invalid: false,
+        label: 'username', // attribute of dictionary file in lang/ directory
+        placeholder: 'typeYourUsername', // attribute of dictionary file in lang/ directory
+        name: 'username', // field name specified in API documentation
+        type: 'text', // input type
+        value: '', // input value
+        rules: 'required|username|max:150', // rules vee-validate
+        icon: 'account', // file in assets/icons/
       },
       {
         label: 'email',
         placeholder: 'typeYourEmail',
         name: 'email',
         type: 'email',
-        required: true,
         value: '',
-        invalid: false,
+        rules: 'required|email|max:254',
+        icon: 'email',
       },
       {
         label: 'password',
         placeholder: 'typeYourPassword',
         name: 'password',
         type: 'password',
-        required: true,
         value: '',
-        invalid: false,
+        rules: 'required|max:100',
+        vid: 'password',
+        icon: 'lock',
       },
       {
         label: 'passwordConfirmation',
         placeholder: 'typeYourPasswordAgain',
         name: 'password2',
         type: 'password',
-        required: true,
         value: '',
-        invalid: false,
+        rules: 'required|confirmed:password',
+        icon: 'lock',
+      },
+      {
+        label: 'city',
+        placeholder: 'typeYourCity',
+        name: 'city',
+        type: 'text',
+        value: '',
+        rules: 'required|alpha|max:50',
+        icon: 'location',
+      },
+      {
+        label: 'state',
+        placeholder: 'typeYourState',
+        name: 'state',
+        type: 'text',
+        value: '',
+        rules: 'required|alpha|max:50',
+        icon: 'location',
       },
     ],
   }),
