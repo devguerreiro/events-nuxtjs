@@ -48,13 +48,8 @@ export default {
   data: () => ({
     rightLinks: [
       {
-        label: 'signIn', // word of language file to translate
-        url: 'user-login', // route name
-        icon: 'el-icon-user-solid',
-      },
-      {
-        label: 'signUp',
-        url: 'user-register',
+        label: 'signUp', // attribute of dictionary file in lang/ directory
+        url: 'user-register', // route name
         icon: 'el-icon-s-custom',
       },
     ],
