@@ -1,6 +1,6 @@
 <template>
-  <main
-    class="py-8 bg-blue-400 flex flex-col items-center xl:flex-row xl:justify-around"
+  <div
+    class="h-full py-8 bg-blue-400 flex flex-col items-center xl:flex-row xl:justify-around"
   >
     <div class="h-24 w-24 md:w-2/5 md:h-1/5 xl:h-1/3">
       <EventLogo />
@@ -12,7 +12,7 @@
         :label_button="$t('send')"
       />
     </div>
-  </main>
+  </div>
 </template>
 
 <script>

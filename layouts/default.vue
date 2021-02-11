@@ -3,7 +3,9 @@
     <header>
       <EventNavBar />
     </header>
-    <Nuxt class="flex-1" />
+    <main class="flex-1">
+      <Nuxt />
+    </main>
     <EventFooter />
   </div>
 </template>

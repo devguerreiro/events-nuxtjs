@@ -1,18 +1,16 @@
 <template>
-  <main>
-    <div align="center">
-      <h1 class="font-semibold text-center mt-8 text-4xl">
-        Playing with Vuex Store
-      </h1>
-      <h2>If you liked this page, click below to support me 👇</h2>
-      <div class="mt-4 flex justify-center items-center">
-        <EventButton label="Click here" @click.once.native="execAddSupporter" />
-        <span class="inline-block ml-4 text-4xl text-main-color">
-          <strong>{{ counter }}</strong>
-        </span>
-      </div>
+  <div align="center" class="mt-8">
+    <h1 class="font-semibold text-4xl text-main-color">
+      Playing with Vuex Store
+    </h1>
+    <h2>If you liked this page, click below to support me 👇</h2>
+    <div class="mt-4 flex justify-center items-center">
+      <EventButton label="Support" @click.once.native="execAddSupporter" />
+      <span class="inline-block ml-4 text-4xl text-main-color animate-bounce">
+        <strong>{{ counter }}</strong>
+      </span>
     </div>
-  </main>
+  </div>
 </template>
 <script>
 import { mapGetters, mapMutations } from 'vuex'
