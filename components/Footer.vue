@@ -41,7 +41,7 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
-    <div class="w-full py-2 flex justify-center text-white" copyright>
+    <div class="w-full py-2 flex justify-center font-light text-white" copyright>
       <h1 title="Copyright" class="text-sm md:text-lg lg:text-3xl xl:text-base">
         &copy; Copyright {{ dateNow }}, DevGuerreiro &#x1F4BB; &#x2764;
         &#x1F989;

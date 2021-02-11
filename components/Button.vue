@@ -1,6 +1,6 @@
 <template>
   <button
-    class="px-4 py-2 bg-transparent rounded-full ring-2 ring-blue-200 ring-opacity-80 text-white font-bold focus:outline-none"
+    class="px-4 py-2 bg-transparent rounded-full ring-2 ring-blue-200 ring-opacity-80 font-semibold focus:outline-none"
     :title="label"
     :class="
       disabled

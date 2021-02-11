@@ -5,7 +5,7 @@
       :rules="rules"
       :vid="name"
     >
-      <label class="text-white font-bold" :for="name">{{ label }}</label>
+      <label class="text-white font-medium" :for="name">{{ label }}</label>
       <div
         class="flex my-1 ring-2 ring-opacity-100 rounded-lg"
         :class="classes"
@@ -18,7 +18,7 @@
           :alt="`${icon} icon`"
         />
         <input
-          class="flex-1 px-1 text-gray-600 rounded-r-lg focus:outline-none"
+          class="flex-1 px-1 font-light rounded-r-lg focus:outline-none"
           v-model="inputValue"
           input
           :title="label"
@@ -29,13 +29,9 @@
           :name="name"
         />
       </div>
-      <span
-        title="Errors"
-        v-if="invalid"
-        errors
-        :class="classes"
-        >{{ errors[0] }}</span
-      >
+      <span title="Errors" v-if="invalid" errors :class="classes">{{
+        errors[0]
+      }}</span>
     </ValidationProvider>
   </div>
 </template>

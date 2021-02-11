@@ -7,7 +7,7 @@
     >
       <fieldset class="w-full">
         <legend
-          class="text-center text-2xl md:text-4xl lg:text-5xl xl:text-4xl"
+          class="text-center font-semibold text-2xl md:text-4xl lg:text-5xl xl:text-4xl"
         >
           {{ $t('register') }}
         </legend>
