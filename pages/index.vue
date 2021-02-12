@@ -1,5 +1,5 @@
 <template>
-  <div align="center" class="mt-8">
+  <div class="mt-8">
     <h1 class="font-semibold text-4xl text-main-color">
       Playing with Vuex Store
     </h1>
