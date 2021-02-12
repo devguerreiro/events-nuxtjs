@@ -21,41 +21,41 @@ export default {
   data: () => ({
     form_data: [
       {
-        id: "event-user-register-username-input",
+        id: 'event-user-register-username-input',
         label: 'username', // attribute of dictionary file in lang/ directory
         placeholder: 'typeYourUsername', // attribute of dictionary file in lang/ directory
         name: 'username', // field name specified in API documentation
         type: 'text', // input type
         value: '', // input value
-        autocomplete: "username",
+        autocomplete: 'username',
         rules: 'required|username|max:150', // rules vee-validate
         icon: 'account', // file in assets/icons/
       },
       {
-        id: "event-user-register-username-email",
+        id: 'event-user-register-username-email',
         label: 'email',
         placeholder: 'typeYourEmail',
         name: 'email',
         type: 'email',
         value: '',
-        autocomplete: "email",
+        autocomplete: 'email',
         rules: 'required|email|max:254',
         icon: 'email',
       },
       {
-        id: "event-user-register-username-password",
+        id: 'event-user-register-username-password',
         label: 'password',
         placeholder: 'typeYourPassword',
         name: 'password',
         type: 'password',
         value: '',
-        autocomplete: "on", // new password or current-password
+        autocomplete: 'on', // new password or current-password
         rules: 'required|max:100|min:8',
         vid: 'password',
         icon: 'lock',
       },
       {
-        id: "event-user-register-username-password2",
+        id: 'event-user-register-username-password2',
         label: 'passwordConfirmation',
         placeholder: 'typeYourPasswordAgain',
         name: 'password2',
@@ -65,7 +65,7 @@ export default {
         icon: 'lock',
       },
       {
-        id: "event-user-register-username-city",
+        id: 'event-user-register-username-city',
         label: 'city',
         placeholder: 'typeYourCity',
         name: 'city',
@@ -75,7 +75,7 @@ export default {
         icon: 'location',
       },
       {
-        id: "event-user-register-username-state",
+        id: 'event-user-register-username-state',
         label: 'state',
         placeholder: 'typeYourState',
         name: 'state',
