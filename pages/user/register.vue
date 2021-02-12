@@ -49,6 +49,7 @@ export default {
         name: 'password',
         type: 'password',
         value: '',
+        autocomplete: "on", // new password or current-password
         rules: 'required|max:100|min:8',
         vid: 'password',
         icon: 'lock',
