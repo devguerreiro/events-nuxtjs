@@ -14,7 +14,7 @@
 </template>
 <script>
 import { mapGetters, mapMutations } from 'vuex'
-import { ADD_SUPPORTER } from '@/store/mutation-types'
+import { ADD_SUPPORTER } from '~/store/mutation-types'
 
 export default {
   computed: {
