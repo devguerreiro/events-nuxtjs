@@ -25,9 +25,9 @@
       class="h-full hidden text-white container mx-auto md:flex md:justify-between md:text-lg lg:text-2xl xl:text-base"
       desktop
     >
-      <div class="h-full w-36" logo-left>
+      <div class="h-full" logo-left>
         <nuxt-link :to="localePath('index')">
-          <EventLogo />
+          <EventLogo size="nav" />
         </nuxt-link>
       </div>
       <div class="h-full flex justify-around items-center" items-right>
@@ -43,6 +43,7 @@
     </div>
   </nav>
 </template>
+
 <script>
 export default {
   data: () => ({
