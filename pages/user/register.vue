@@ -8,9 +8,9 @@
     <div class="w-full px-4 md:w-4/5 lg:w-11/12 xl:w-1/3">
       <EventForm
         class="text-sm md:text-xl lg:text-2xl xl:text-base"
-        legend="register"
+        legend="legends.register"
         :form_data="form_data"
-        :label_button="$t('send')"
+        :label_button="$t('buttons.send')"
       />
     </div>
   </div>
@@ -22,8 +22,8 @@ export default {
     form_data: [
       {
         id: 'event-user-register-username-input',
-        label: 'username', // attribute of dictionary file in lang/ directory
-        placeholder: 'typeYourUsername', // attribute of dictionary file in lang/ directory
+        label: 'labels.username', // attribute of dictionary file in lang/ directory
+        placeholder: 'placeholders.typeYourUsername', // attribute of dictionary file in lang/ directory
         name: 'username', // field name specified in API documentation
         type: 'text', // input type
         value: '', // input value
@@ -33,8 +33,8 @@ export default {
       },
       {
         id: 'event-user-register-username-email',
-        label: 'email',
-        placeholder: 'typeYourEmail',
+        label: 'labels.email',
+        placeholder: 'placeholders.typeYourEmail',
         name: 'email',
         type: 'email',
         value: '',
@@ -44,8 +44,8 @@ export default {
       },
       {
         id: 'event-user-register-username-password',
-        label: 'password',
-        placeholder: 'typeYourPassword',
+        label: 'labels.password',
+        placeholder: 'placeholders.typeYourPassword',
         name: 'password',
         type: 'password',
         value: '',
@@ -56,8 +56,8 @@ export default {
       },
       {
         id: 'event-user-register-username-password2',
-        label: 'passwordConfirmation',
-        placeholder: 'typeYourPasswordAgain',
+        label: 'labels.passwordConfirmation',
+        placeholder: 'placeholders.typeYourPasswordAgain',
         name: 'password2',
         type: 'password',
         value: '',
@@ -66,8 +66,8 @@ export default {
       },
       {
         id: 'event-user-register-username-city',
-        label: 'city',
-        placeholder: 'typeYourCity',
+        label: 'labels.city',
+        placeholder: 'placeholders.typeYourCity',
         name: 'city',
         type: 'text',
         value: '',
@@ -76,8 +76,8 @@ export default {
       },
       {
         id: 'event-user-register-username-state',
-        label: 'state',
-        placeholder: 'typeYourState',
+        label: 'labels.state',
+        placeholder: 'placeholders.typeYourState',
         name: 'state',
         type: 'text',
         value: '',

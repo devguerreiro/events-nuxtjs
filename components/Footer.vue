@@ -15,7 +15,7 @@
           class="item el-dropdown-link"
           effect="light"
           placement="left"
-          :content="$t('chooseLanguage')"
+          :content="$t('locales.chooseLanguage')"
         >
           <img
             class="object contain cursor-pointer"
@@ -34,7 +34,7 @@
                 class="my-2"
                 height="32"
                 width="32"
-                :title="$t(language.locale)"
+                :title="$t(language.title)"
                 :src="require(`~/assets/icons/${language.locale}.svg`)"
                 :alt="$t(language.locale)"
               />
@@ -60,12 +60,15 @@ export default {
   data: () => ({
     languages: [
       {
+        title: "locales['pt-br']",
         locale: 'pt-br',
       },
       {
+        title: "locales['en']",
         locale: 'en',
       },
       {
+        title: "locales['es']",
         locale: 'es',
       },
     ],

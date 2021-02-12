@@ -49,9 +49,9 @@ export default {
   data: () => ({
     rightLinks: [
       {
-        label: 'signUp', // attribute of dictionary file in lang/ directory
+        label: 'nav.signUp', // attribute of dictionary file in lang/ directory
         url: 'user-register', // route name
-        icon: 'el-icon-s-custom',
+        icon: 'el-icon-s-custom', // icon to show on mobile
       },
     ],
   }),

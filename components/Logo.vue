@@ -7,7 +7,7 @@
       class="object-contain"
       src="~/assets/img/coruja-logo-nav.png"
       alt="Logo Coruja"
-      :title="$t('logo')"
+      :title="$t('components.logo')"
     />
     <img
       v-else-if="size === 'mobile'"
@@ -16,7 +16,7 @@
       class="object-contain"
       src="~/assets/img/coruja-logo-mobile.png"
       alt="Logo Coruja"
-      :title="$t('logo')"
+      :title="$t('components.logo')"
     />
     <img
       v-else-if="size === 'ipad'"
@@ -25,7 +25,7 @@
       class="object-contain"
       src="~/assets/img/coruja-logo-ipad.png"
       alt="Logo Coruja"
-      :title="$t('logo')"
+      :title="$t('components.logo')"
     />
     <img
       v-else
@@ -34,7 +34,7 @@
       class="object-contain"
       src="~/assets/img/coruja-logo-desktop.png"
       alt="Logo Coruja"
-      :title="$t('logo')"
+      :title="$t('components.logo')"
     />
   </div>
 </template>
