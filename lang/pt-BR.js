@@ -24,6 +24,7 @@ export default {
   },
   buttons: {
     send: 'Enviar',
+    support: 'Apoiar',
   },
   locales: {
     chooseLanguage: 'Escolha um idioma',
@@ -42,5 +43,11 @@ export default {
   },
   components: {
     logo: 'Logo do sistema que é uma coruja usando terno',
+  },
+  pages: {
+    index: {
+      h1: 'Brincando com Vuex Store',
+      h2: 'Se você gostou deste site, clique abaixo para me apoiar 👇',
+    },
   },
 }

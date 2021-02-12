@@ -1,11 +1,19 @@
 <template>
-  <div class="mt-8">
+  <div
+    class="mt-8 container mx-auto flex flex-col items-center"
+    title="I do not want translate this page, sorry"
+  >
     <h1 class="font-semibold text-4xl text-main-color">
-      Playing with Vuex Store
+      {{ $t('pages.index.h1') }}
     </h1>
-    <h2>If you liked this page, click below to support me 👇</h2>
+    <h2>
+      {{ $t('pages.index.h2') }}
+    </h2>
     <div class="mt-4 flex justify-center items-center">
-      <EventButton label="Support" @click.once.native="execAddSupporter" />
+      <EventButton
+        :label="$t('buttons.support')"
+        @click.once.native="execAddSupporter"
+      />
       <span class="inline-block ml-4 text-4xl text-main-color animate-bounce">
         <strong>{{ counter }}</strong>
       </span>

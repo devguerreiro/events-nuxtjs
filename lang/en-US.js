@@ -24,6 +24,7 @@ export default {
   },
   buttons: {
     send: 'Send',
+    support: 'Support',
   },
   locales: {
     chooseLanguage: 'Choose a language',
@@ -42,5 +43,11 @@ export default {
   },
   components: {
     logo: 'System logo that is a owl wearing a suit',
+  },
+  pages: {
+    index: {
+      h1: 'Playing with Vuex Store',
+      h2: 'If you liked this site, click below to support me 👇',
+    },
   },
 }

@@ -24,6 +24,7 @@ export default {
   },
   buttons: {
     send: 'Enviar',
+    support: 'Apoyo',
   },
   locales: {
     chooseLanguage: 'Elige un idioma',
@@ -42,5 +43,11 @@ export default {
   },
   components: {
     logo: 'Logotipo del sistema que es un búho con traje.',
+  },
+  pages: {
+    index: {
+      h1: 'Jugando con Vuex Store',
+      h2: 'Si le gustó este sitio, haga clic a continuación para apoyarme 👇',
+    },
   },
 }
