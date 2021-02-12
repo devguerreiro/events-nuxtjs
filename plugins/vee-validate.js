@@ -1,10 +1,18 @@
-import { extend, configure } from 'vee-validate'
-import { required, email, alpha, max, confirmed } from 'vee-validate/dist/rules'
+import {
+  alpha,
+  confirmed,
+  email,
+  max,
+  min,
+  required,
+} from 'vee-validate/dist/rules'
+import { configure, extend } from 'vee-validate'
 
 extend('required', required)
 extend('alpha', alpha)
 extend('email', email)
 extend('max', max)
+extend('min', min)
 extend('confirmed', confirmed)
 
 // Custom rule

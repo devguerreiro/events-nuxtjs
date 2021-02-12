@@ -49,7 +49,7 @@ export default {
         name: 'password',
         type: 'password',
         value: '',
-        rules: 'required|max:100',
+        rules: 'required|max:100|min:8',
         vid: 'password',
         icon: 'lock',
       },

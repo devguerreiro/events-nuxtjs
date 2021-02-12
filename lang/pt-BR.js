@@ -20,12 +20,12 @@ export default {
   typeYourCity: 'Onde você mora?',
   typeYourState: 'De onde você é?',
   // words
-  register: 'Registrar-se',
+  register: 'Cadastro',
   send: 'Enviar',
   chooseLanguage: 'Escolha um idioma',
   logo: 'Logo do sistema que é uma coruja usando terno',
   en: 'Inglês',
-  "pt-br": 'Português - Brasil',
+  'pt-br': 'Português - Brasil',
   es: 'Espanhol',
 
   validations: {
@@ -34,6 +34,7 @@ export default {
     username: 'Este campo deve conter apenas letras, números e ._ apenas',
     email: 'Este campo deve conter um email válido',
     max: `Este campo deve conter no máximo {length} caracteres`,
+    min: `Este campo deve conter no mínimo {length} caracteres`,
     confirmed: '{target} não confere',
   },
 }

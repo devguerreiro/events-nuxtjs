@@ -33,7 +33,8 @@ export default {
     alpha: 'This field must contain only letters',
     username: 'This field must contain only letters, numbers and ._',
     email: 'This field must be a valid email',
-    max: `This field must contain a maximum of {length} characters`,
+    max: "This field must contain a maximum of {length} characters",
+    min: "This field must contain a minimum of {length} characters",
     confirmed: '{target} does not match',
   },
 }

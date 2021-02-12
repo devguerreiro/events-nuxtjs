@@ -34,6 +34,7 @@ export default {
     username: 'Este campo debe contener solo letras, números y solo ._',
     email: 'Este campo debe contener un correo electrónico válido',
     max: `Este campo debe contener un máximo de {length} caracteres`,
+    min: `Este campo debe contener un mínimo de {length} caracteres`,
     confirmed: '{target} no coincide',
   },
 }
