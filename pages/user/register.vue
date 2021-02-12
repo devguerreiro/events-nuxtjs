@@ -8,6 +8,7 @@
     <div class="w-full px-4 md:w-4/5 lg:w-11/12 xl:w-1/3">
       <EventForm
         class="text-sm md:text-xl lg:text-2xl xl:text-base"
+        legend="register"
         :form_data="form_data"
         :label_button="$t('send')"
       />

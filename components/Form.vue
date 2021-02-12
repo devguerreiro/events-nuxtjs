@@ -2,14 +2,14 @@
   <ValidationObserver v-slot="{ invalid, handleSubmit }">
     <form
       class="flex flex-col items-center p-8 bg-main-color text-white ring-4 ring-black ring-opacity-10 rounded-2xl shadow-2xl"
-      @submit.prevent="handleSubmit(register)"
+      @submit.prevent="handleSubmit()"
       novalidate
     >
       <fieldset class="w-full">
         <legend
           class="text-center font-semibold text-2xl md:text-4xl lg:text-5xl xl:text-4xl"
         >
-          {{ $t('register') }}
+          {{ $t(legend) }}
         </legend>
         <div class="w-full flex-1" inputs>
           <EventInput
@@ -26,7 +26,7 @@
         </div>
       </fieldset>
       <div class="h-16 flex justify-center items-center" button>
-        <EventButton :label="label_button" :disabled="invalid" />
+        <EventButton type="submit" :label="label_button" :disabled="invalid" />
       </div>
     </form>
   </ValidationObserver>
@@ -36,12 +36,7 @@
 import { ValidationObserver } from 'vee-validate'
 
 export default {
-  props: ['form_data', 'label_button'],
+  props: ['form_data', 'label_button', 'legend'],
   components: { ValidationObserver },
-  methods: {
-    register: () => {
-      console.log('register')
-    },
-  },
 }
 </script>
