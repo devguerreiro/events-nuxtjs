@@ -5,7 +5,7 @@
       :rules="rules"
       :vid="name"
     >
-      <label class="text-white font-medium" :for="name">{{ label }}</label>
+      <label class="text-white font-medium" :for="id">{{ label }}</label>
       <div
         class="flex my-1 ring-2 ring-opacity-100 rounded-lg"
         :class="classes"
@@ -24,7 +24,7 @@
           :autocomplete="autocomplete"
           :title="label"
           :class="classes"
-          :id="name"
+          :id="id"
           :type="type"
           :placeholder="placeholder"
           :name="name"
@@ -42,6 +42,7 @@ import { ValidationProvider } from 'vee-validate'
 
 export default {
   props: [
+    'id',
     'value',
     'type',
     'placeholder',

@@ -15,6 +15,7 @@
           <EventInput
             v-for="(input, index) in form_data"
             v-model="input.value"
+            :id="input.id"
             :key="index"
             :label="$t(input.label)"
             :placeholder="$t(input.placeholder)"

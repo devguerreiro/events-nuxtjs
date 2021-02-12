@@ -21,6 +21,7 @@ export default {
   data: () => ({
     form_data: [
       {
+        id: "event-user-register-username-input",
         label: 'username', // attribute of dictionary file in lang/ directory
         placeholder: 'typeYourUsername', // attribute of dictionary file in lang/ directory
         name: 'username', // field name specified in API documentation
@@ -31,6 +32,7 @@ export default {
         icon: 'account', // file in assets/icons/
       },
       {
+        id: "event-user-register-username-email",
         label: 'email',
         placeholder: 'typeYourEmail',
         name: 'email',
@@ -41,6 +43,7 @@ export default {
         icon: 'email',
       },
       {
+        id: "event-user-register-username-password",
         label: 'password',
         placeholder: 'typeYourPassword',
         name: 'password',
@@ -51,6 +54,7 @@ export default {
         icon: 'lock',
       },
       {
+        id: "event-user-register-username-password2",
         label: 'passwordConfirmation',
         placeholder: 'typeYourPasswordAgain',
         name: 'password2',
@@ -60,6 +64,7 @@ export default {
         icon: 'lock',
       },
       {
+        id: "event-user-register-username-city",
         label: 'city',
         placeholder: 'typeYourCity',
         name: 'city',
@@ -69,6 +74,7 @@ export default {
         icon: 'location',
       },
       {
+        id: "event-user-register-username-state",
         label: 'state',
         placeholder: 'typeYourState',
         name: 'state',
