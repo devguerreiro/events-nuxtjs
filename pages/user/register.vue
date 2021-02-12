@@ -26,6 +26,7 @@ export default {
         name: 'username', // field name specified in API documentation
         type: 'text', // input type
         value: '', // input value
+        autocomplete: "username",
         rules: 'required|username|max:150', // rules vee-validate
         icon: 'account', // file in assets/icons/
       },
@@ -35,6 +36,7 @@ export default {
         name: 'email',
         type: 'email',
         value: '',
+        autocomplete: "email",
         rules: 'required|email|max:254',
         icon: 'email',
       },

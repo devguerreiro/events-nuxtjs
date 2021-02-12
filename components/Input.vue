@@ -18,9 +18,10 @@
           :alt="`${icon} icon`"
         />
         <input
-          class="flex-1 px-1 font-light rounded-r-lg focus:outline-none"
+          class="flex-1 px-1 font-light text-gray-600 rounded-r-lg focus:outline-none"
           v-model="inputValue"
           input
+          :autocomplete="autocomplete"
           :title="label"
           :class="classes"
           :id="name"
@@ -46,6 +47,7 @@ export default {
     'placeholder',
     'name',
     'label',
+    'autocomplete',
     'rules',
     'icon',
     'vid',

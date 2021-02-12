@@ -20,6 +20,7 @@
             :placeholder="$t(input.placeholder)"
             :name="input.name"
             :type="input.type"
+            :autocomplete="input.autocomplete"
             :rules="input.rules"
             :icon="input.icon"
           />
