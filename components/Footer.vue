@@ -3,7 +3,7 @@
     <div
       class="h-0 relative bottom-16 right-6 z-10"
       languages
-      :title="$t('chooseLanguage')"
+      :title="$t('locales.chooseLanguage')"
     >
       <el-dropdown
         class="h-12 w-12"
@@ -36,7 +36,7 @@
                 width="32"
                 :title="$t(language.title)"
                 :src="require(`~/assets/icons/${language.locale}.svg`)"
-                :alt="$t(language.locale)"
+                :alt="$t(language.title)"
               />
             </nuxt-link>
           </el-dropdown-item>
