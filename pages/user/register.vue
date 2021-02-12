@@ -2,8 +2,10 @@
   <div
     class="h-full py-8 bg-blue-400 flex flex-col items-center xl:flex-row xl:justify-around"
   >
-    <div class="h-24 w-24 md:w-2/5 md:h-1/5 xl:h-1/3">
-      <EventLogo />
+    <div>
+      <EventLogo
+        class="h-28 w-28 md:h-40 md:w-40 lg:h-48 lg:w-48 xl:h-56 xl:w-56"
+      />
     </div>
     <div class="w-full px-4 md:w-4/5 lg:w-11/12 xl:w-1/3">
       <EventForm
