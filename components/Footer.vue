@@ -31,7 +31,9 @@
           >
             <nuxt-link :to="switchLocalePath(language.locale)">
               <img
-                class="h-8 w-8 my-2"
+                class="my-2"
+                height="32"
+                width="32"
                 :title="$t(language.locale)"
                 :src="require(`~/assets/icons/${language.locale}.svg`)"
                 :alt="$t(language.locale)"
@@ -41,14 +43,18 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
-    <div class="w-full py-2 flex justify-center font-light text-white" copyright>
-      <h1 title="Copyright" class="text-sm md:text-lg lg:text-3xl xl:text-base">
+    <div
+      class="w-full py-2 flex justify-center font-light text-white"
+      copyright
+    >
+      <h1 title="Copyright" class="text-sm md:text-lg lg:text-2xl xl:text-base">
         &copy; Copyright {{ dateNow }}, DevGuerreiro &#x1F4BB; &#x2764;
         &#x1F989;
       </h1>
     </div>
   </footer>
 </template>
+
 <script>
 export default {
   data: () => ({

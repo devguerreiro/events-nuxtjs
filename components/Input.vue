@@ -18,7 +18,7 @@
           :alt="`${icon} icon`"
         />
         <input
-          class="flex-1 px-1 font-light text-gray-600 rounded-r-lg focus:outline-none"
+          class="w-full flex-1 px-1 font-light text-gray-600 rounded-r-lg focus:outline-none"
           v-model="inputValue"
           input
           :autocomplete="autocomplete"
