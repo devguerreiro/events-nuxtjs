@@ -1,6 +1,7 @@
 <template>
   <nav class="h-12 bg-main-color">
     <div
+      v-if="isMobile"
       class="md:hidden text-white h-full flex justify-end items-center"
       mobile
     >
@@ -22,6 +23,7 @@
       </el-dropdown>
     </div>
     <div
+      v-else
       class="h-full hidden text-white container mx-auto md:flex md:justify-between md:text-lg lg:text-2xl xl:text-base"
       desktop
     >
@@ -54,7 +56,27 @@ export default {
         icon: 'el-icon-s-custom', // icon to show on mobile
       },
     ],
+    windowWidth: '',
+    isMobile: '',
+    maxMobileWidth: 768,
   }),
+  beforeMount() {
+    this.updateWindowWidth(window.innerWidth)
+
+    window.addEventListener('resize', this.handleResize)
+  },
+  methods: {
+    updateWindowWidth: function (newWidth) {
+      this.windowWidth = newWidth
+      this.isMobile = this.handleIsMobile(newWidth)
+    },
+    handleResize: function (e) {
+      this.updateWindowWidth(e.target.innerWidth)
+    },
+    handleIsMobile: function (width) {
+      return width < this.maxMobileWidth
+    },
+  },
 }
 </script>
 
