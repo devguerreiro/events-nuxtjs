@@ -3,8 +3,8 @@
     <EventForm
       class="text-sm md:text-xl lg:text-2xl xl:text-base"
       legend="legends.register"
-      :form_data="form_data"
-      :label_button="$t('buttons.send')"
+      :formData="formData"
+      :labelButton="$t('buttons.send')"
     />
   </div>
 </template>
@@ -12,7 +12,7 @@
 <script>
 export default {
   data: () => ({
-    form_data: [
+    formData: [
       {
         id: 'event-user-register-username-input',
         label: 'labels.username', // attribute of dictionary file in lang/ directory
