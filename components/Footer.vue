@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full flex flex-col items-end relative top-0 bg-main-color">
+  <footer class="w-full flex flex-col items-end bg-main-color">
     <div
       class="h-0 relative bottom-16 right-6 z-10"
       languages
