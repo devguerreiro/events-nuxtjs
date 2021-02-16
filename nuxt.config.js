@@ -94,4 +94,8 @@ export default {
     // Add exception
     transpile: ['vee-validate/dist/rules'],
   },
+
+  loading: {
+    color: "rgba(96, 165, 250, 1)",
+  },
 }
