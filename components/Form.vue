@@ -27,7 +27,7 @@
           />
         </div>
       </fieldset>
-      <div class="h-16 flex justify-center items-center" button>
+      <div class="h-16 mt-4 flex justify-center items-center" button>
         <EventButton type="submit" :label="label_button" :disabled="invalid" />
       </div>
     </form>
