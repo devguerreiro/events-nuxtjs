@@ -21,9 +21,11 @@ export default {
   },
   legends: {
     register: 'Registrarse',
+    login: "Login",
   },
   buttons: {
     send: 'Enviar',
+    login: "Entra",
     support: 'Apoyo',
   },
   locales: {

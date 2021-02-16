@@ -1,7 +1,7 @@
 export default {
   nav: {
-    signIn: 'Sign-in',
-    signUp: 'Sign-up',
+    signIn: 'Sign-In',
+    signUp: 'Sign-Up',
   },
   labels: {
     username: 'Username',
@@ -21,9 +21,11 @@ export default {
   },
   legends: {
     register: 'Register',
+    login: "Login",
   },
   buttons: {
     send: 'Send',
+    login: "Get In",
     support: 'Support',
   },
   locales: {

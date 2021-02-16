@@ -1,20 +1,11 @@
 <template>
-  <div
-    class="h-full py-8 bg-blue-400 flex flex-col items-center xl:flex-row xl:justify-around"
-  >
-    <div>
-      <EventLogo
-        class="h-28 w-28 md:h-40 md:w-40 lg:h-48 lg:w-48 xl:h-56 xl:w-56"
-      />
-    </div>
-    <div class="w-full px-4 md:w-4/5 lg:w-11/12 xl:w-1/3">
-      <EventForm
-        class="text-sm md:text-xl lg:text-2xl xl:text-base"
-        legend="legends.register"
-        :form_data="form_data"
-        :label_button="$t('buttons.send')"
-      />
-    </div>
+  <div class="w-full px-4 md:w-4/5 lg:w-11/12 xl:w-1/3 2xl:w-1/4">
+    <EventForm
+      class="text-sm md:text-xl lg:text-2xl xl:text-base"
+      legend="legends.register"
+      :form_data="form_data"
+      :label_button="$t('buttons.send')"
+    />
   </div>
 </template>
 

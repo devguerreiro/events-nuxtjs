@@ -55,6 +55,11 @@ export default {
         url: 'user-register', // route name
         icon: 'el-icon-s-custom', // icon to show on mobile
       },
+      {
+        label: 'nav.signIn',
+        url: 'user-login',
+        icon: 'el-icon-user-solid',
+      },
     ],
     windowWidth: '',
     isMobile: '',

@@ -21,9 +21,11 @@ export default {
   },
   legends: {
     register: 'Cadastro',
+    login: "Login",
   },
   buttons: {
     send: 'Enviar',
+    login: "Entrar",
     support: 'Apoiar',
   },
   locales: {
