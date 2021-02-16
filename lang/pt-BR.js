@@ -2,6 +2,7 @@ export default {
   nav: {
     signIn: 'Login',
     signUp: 'Cadastro',
+    home: "Página Inicial",
   },
   labels: {
     username: 'Usuário',
@@ -26,6 +27,7 @@ export default {
   buttons: {
     send: 'Enviar',
     login: "Entrar",
+    back: "Voltar",
     support: 'Apoiar',
   },
   locales: {

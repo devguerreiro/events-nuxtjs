@@ -2,6 +2,7 @@ export default {
   nav: {
     signIn: 'Sign-In',
     signUp: 'Sign-Up',
+    home: "Home",
   },
   labels: {
     username: 'Username',
@@ -26,6 +27,7 @@ export default {
   buttons: {
     send: 'Send',
     login: "Get In",
+    back: "Back",
     support: 'Support',
   },
   locales: {
