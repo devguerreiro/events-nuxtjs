@@ -1,7 +1,6 @@
 <template>
   <div
     class="mt-8 container mx-auto flex flex-col items-center"
-    title="I do not want translate this page, sorry"
   >
     <h1 class="font-semibold text-4xl text-main-color">
       {{ $t('pages.index.h1') }}
