@@ -12,7 +12,7 @@
     <div class="mt-4 flex justify-center items-center">
       <EventButton
         :label="$t('buttons.support')"
-        @click.once.native="execAddSupporter"
+        @click.once.native="incrementCounter"
       />
       <span class="inline-block ml-4 text-4xl text-main-color animate-bounce">
         <strong>{{ counter }}</strong>
@@ -21,18 +21,17 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapMutations } from 'vuex'
-import { ADD_SUPPORTER } from '~/store/mutation-types'
+import { mapActions, mapGetters } from 'vuex'
 
 export default {
+  async created() {
+    await this.getCounter()
+  },
   computed: {
     ...mapGetters('supporters', ['counter']),
   },
   methods: {
-    ...mapMutations('supporters', [ADD_SUPPORTER]),
-    execAddSupporter: function () {
-      this[ADD_SUPPORTER]()
-    },
+    ...mapActions('supporters', ['getCounter', 'incrementCounter']),
   },
 }
 </script>
