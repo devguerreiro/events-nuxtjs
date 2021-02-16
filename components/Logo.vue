@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      v-if="size === 'nav'"
+      v-if="normalizedSize === 'nav'"
       height="48"
       width="60"
       class="object-contain"
@@ -10,7 +10,7 @@
       :title="$t('components.logo')"
     />
     <img
-      v-else-if="size === 'mobile'"
+      v-else-if="normalizedSize === 'mobile'"
       height="96"
       width="120"
       class="object-contain"
@@ -19,7 +19,7 @@
       :title="$t('components.logo')"
     />
     <img
-      v-else-if="size === 'ipad'"
+      v-else-if="normalizedSize === 'ipad'"
       height="175"
       width="218"
       class="object-contain"
@@ -41,6 +41,16 @@
 
 <script>
 export default {
-  props: ['size'],
+  props: {
+    size: {
+      type: String,
+      default: '',
+    },
+  },
+  computed: {
+    normalizedSize: function () {
+      return this.size.trim().toLowerCase()
+    },
+  },
 }
 </script>

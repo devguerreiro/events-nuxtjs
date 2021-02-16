@@ -12,8 +12,8 @@
           {{ $t(legend) }}
         </legend>
         <div class="w-full flex-1" inputs>
-          <EventInput
-            v-for="(input, index) in form_data"
+          <EventFormInput
+            v-for="(input, index) in formData"
             v-model="input.value"
             :id="input.id"
             :key="index"
@@ -28,7 +28,7 @@
         </div>
       </fieldset>
       <div class="h-16 mt-4 flex justify-center items-center" button>
-        <EventButton type="submit" :label="label_button" :disabled="invalid" />
+        <EventButton type="submit" :label="labelButton" :disabled="invalid" />
       </div>
     </form>
   </ValidationObserver>
@@ -38,7 +38,20 @@
 import { ValidationObserver } from 'vee-validate'
 
 export default {
-  props: ['form_data', 'label_button', 'legend'],
+  props: {
+    formData: {
+      type: Array,
+      required: true,
+    },
+    labelButton: {
+      type: String,
+      required: true,
+    },
+    legend: {
+      type: String,
+      required: true,
+    },
+  },
   components: { ValidationObserver },
 }
 </script>

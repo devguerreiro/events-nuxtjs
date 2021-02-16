@@ -41,18 +41,46 @@
 import { ValidationProvider } from 'vee-validate'
 
 export default {
-  props: [
-    'id',
-    'value',
-    'type',
-    'placeholder',
-    'name',
-    'label',
-    'autocomplete',
-    'rules',
-    'icon',
-    'vid',
-  ],
+  props: {
+    id: {
+      type: String,
+      required: true,
+    },
+    type: {
+      type: String,
+      required: true,
+    },
+    placeholder: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+    label: {
+      type: String,
+      required: true,
+    },
+    autocomplete: {
+      type: String,
+    },
+    rules: {
+      type: String,
+      required: true,
+    },
+    icon: {
+      type: String,
+      required: true,
+    },
+    vid: {
+      type: String,
+    },
+    value: {
+      type: String,
+      default: '',
+    },
+  },
   components: { ValidationProvider },
   computed: {
     inputValue: {

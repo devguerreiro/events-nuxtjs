@@ -1,7 +1,7 @@
 <template>
   <div>
     <button
-      v-if="type === 'back-page'"
+      v-if="normalizedType === 'back-page'"
       class="flex items-center focus:outline-none"
       :title="label"
       @click="$router.back()"
@@ -25,7 +25,7 @@
           ? 'cursor-not-allowed'
           : 'transform active:scale-100 hover:scale-110 hover:bg-blue-400'
       "
-      :type="type"
+      :type="normalizedType"
       :disabled="disabled"
     >
       {{ label }}
@@ -35,6 +35,24 @@
 
 <script>
 export default {
-  props: ['type', 'label', 'disabled'],
+  props: {
+    type: {
+      type: String,
+      default: 'button',
+    },
+    label: {
+      type: String,
+      required: true,
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    normalizedType: function () {
+      return this.type.trim().toLowerCase()
+    },
+  },
 }
 </script>
