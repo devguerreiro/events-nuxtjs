@@ -9,12 +9,19 @@ This will be a simple app for invite friends to events. That is it! :rofl:
 
 ### Funcionalities:
 :point_right: Login
+
 :point_right: Logout
+
 :point_right: Register
+
 :point_right: Send friend invitation
+
 :point_right: Remove friend
+
 :point_right: Event CRUD
+
 :point_right: Send event invitation to friend(s)
+
 :point_right: ...
 
 ## Build Setup
