@@ -1,4 +1,21 @@
-# events
+
+# Hi :grinning:
+This is an app that I'm developing for portfolio and to get new knowlegde with Vuejs and Nuxtjs :call_me_hand:.
+
+I always try to follow the best practices of clean code :nail_care:, reusable components :recycle:, accessibility :eyeglasses:, performance :zap: and trying to make a good design :art:.
+
+## About
+This will be a simple app for invite friends to events. That is it! :rofl:
+
+### Funcionalities:
+:point_right: Login
+:point_right: Logout
+:point_right: Register
+:point_right: Send friend invitation
+:point_right: Remove friend
+:point_right: Event CRUD
+:point_right: Send event invitation to friend(s)
+:point_right: ...
 
 ## Build Setup
 
@@ -18,4 +35,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-# frontend-events
