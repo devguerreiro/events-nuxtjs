@@ -2,6 +2,9 @@
 # Hi :grinning:
 This is an app that I'm developing for portfolio and to get new knowlegde with Vuejs and Nuxtjs :call_me_hand:.
 
+## Demo
+https://eventsnuxtjs.vercel.app
+
 I always try to follow the best practices of clean code :nail_care:, reusable components :recycle:, accessibility :eyeglasses:, performance :zap: and trying to make a good design :art:.
 
 ## About
