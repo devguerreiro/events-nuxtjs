@@ -3,7 +3,7 @@
 This is an app that I'm developing for portfolio and to get new knowlegde with Vuejs and Nuxtjs :call_me_hand:.
 
 ## Demo
-https://eventsnuxtjs.vercel.app
+https://event.devguerreiro.com.br
 
 This project will be build following the best practices of clean code :nail_care:, reusable components :recycle:, accessibility :eyeglasses:, performance :zap: and trying to make a good design :art:.
 
